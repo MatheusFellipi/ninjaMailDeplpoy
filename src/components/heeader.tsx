@@ -37,7 +37,7 @@ export const Header = () => {
             fontSize={{ lg: '17px', md: '11px' }}
             lineHeight={{ lg: '20px', md: '13px' }}
             sx={{
-              '@media (max-width: 320px)': {
+              '@media (max-width: 520px)': {
                 display: 'none',
               },
             }}
