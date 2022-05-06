@@ -22,7 +22,7 @@ export const Thumb = ({ description, href, img, ...rest }: IThumbProps) => {
   return (
     <Box
       w={{ lg: '320px', md: '209.29px', sm: '209.29px' }}
-      h={{ lg: '449px', md: '290.16px', sm: '290.16px' }}
+      h={{ lg: '449px', md: '290.16px', sm: '308.16px' }}
       borderWidth="1px"
       shadow={'lg'}
       bgColor={'white'}
