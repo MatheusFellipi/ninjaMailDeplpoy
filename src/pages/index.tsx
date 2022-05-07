@@ -64,7 +64,7 @@ const Home: NextPage = () => {
           >
             <Box
               as={'h1'}
-              maxW={{ lg: '489px', md: '315px', sm: '267px' }}
+              maxW={{ lg: '489px', md: '315px', sm: '277px' }}
               maxH={{ lg: '317px', md: '208px', sm: '138px' }}
               fontFamily={'heading'}
               fontWeight={'black'}
@@ -127,7 +127,7 @@ const Home: NextPage = () => {
         bgPosition={{
           lg: 'bottom -12rem right 0.4rem',
           md: 'bottom -31rem right -53rem',
-          sm: 'top -41rem right -35rem',
+          sm: 'top -39rem right -35rem',
         }}
         bgRepeat="no-repeat"
         pt={{ lg: 20, md: 20 }}
@@ -215,7 +215,7 @@ const Home: NextPage = () => {
           <Box
             as="h1"
             mt={{ lg: '40px', md: '25px', sm: '59px  ' }}
-            maxW={{ lg: '690px', md: '544px', sm: '225px' }}
+            maxW={{ lg: '781px', md: '544px', sm: '225px' }}
             maxH={{ lg: '126px ', md: '89px', sm: '155px' }}
             lineHeight={{ lg: '48px ', md: '38px', sm: '36px' }}
             fontSize={{ lg: '44px', md: '28px', sm: '26px' }}
