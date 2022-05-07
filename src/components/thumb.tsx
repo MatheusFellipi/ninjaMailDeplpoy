@@ -33,8 +33,8 @@ export const Thumb = ({ description, href, img, ...rest }: IThumbProps) => {
       <Box px={'14px'} mt={'16px'}>
         <Box
           as="p"
-          fontSize={'12px'}
-          lineHeight={'16px'}
+          fontSize={{ lg: '16px', md: '12px', sm: '12px' }}
+          lineHeight={{ lg: '26px', md: '16px', sm: '16px' }}
           fontFamily={'text'}
           fontWeight={500}
         >
