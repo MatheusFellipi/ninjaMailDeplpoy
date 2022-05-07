@@ -98,6 +98,9 @@ const Home: NextPage = () => {
                 fontWeight={'black'}
                 bgColor={'#4BA87D'}
                 color={'white'}
+                _hover={{
+                  filter: 'brightness(0.9)',
+                }}
               >
                 TRY NOW
               </Button>
@@ -278,6 +281,9 @@ const Home: NextPage = () => {
               fontWeight={'black'}
               bgColor={'#62be93'}
               color={'white'}
+              _hover={{
+                filter: 'brightness(0.9)',
+              }}
             >
               JOIN OUR LIST
             </Button>
