@@ -24,8 +24,8 @@ export const CaseStudy = ({ description, name }: ICaseStudyProps) => {
       h={{ lg: '239px ', md: '157px', sm: '157px' }}
     >
       <Heading
-        lineHeight={'26px'}
-        fontSize={'22px'}
+        lineHeight={{ lg: '34px ', md: '26px', sm: '26px' }}
+        fontSize={{ lg: '40px ', md: '22px', sm: '22px' }}
         fontFamily={'text'}
         fontWeight={900}
         ml={17.06}
@@ -35,8 +35,8 @@ export const CaseStudy = ({ description, name }: ICaseStudyProps) => {
       <Heading
         mb={4.66}
         ml={17.06}
-        lineHeight={'14px'}
-        fontSize={'12px'}
+        lineHeight={{ lg: '19px ', md: '12px', sm: '12px' }}
+        fontSize={{ lg: '22px ', md: '14px', sm: '14px' }}
         fontFamily={'text'}
         fontWeight={700}
       >
