@@ -8,10 +8,9 @@ import {
   Heading,
   Image,
   Input,
+  List,
+  ListItem,
   Stack,
-  Text,
-  Wrap,
-  WrapItem,
 } from '@chakra-ui/react'
 import { Header } from '../components/heeader'
 import { Video } from '../components/video'
@@ -411,24 +410,26 @@ const Home: NextPage = () => {
           mb={{ lg: '56.14px', md: '37.72px', sm: '11.72px' }}
         >
           <Flex
-            w={'155px'}
-            h={'52px'}
+            w={{ lg: '197.39px', md: '127.03px' }}
+            h={{ lg: '60.23px', md: '37.27px' }}
             align={'center'}
             mt={{ lg: '82px', md: '47px', sm: '47px' }}
             ml={{ lg: '228px', md: '63px', sm: '17px' }}
           >
-            <Box width={84} height={42} mt={'12px'}>
+            <Box width={92} height={45} mt={'12px'}>
               <Image src="/icon/ninjamail.svg" alt="ninjamail" />
             </Box>
 
             <Heading
-              fontSize="22px"
-              lineHeight={'26px'}
+              fontSize={{ lg: '26px', md: '16px', sm: '16px' }}
+              lineHeight={{ lg: '31px', md: '19px', sm: '19px' }}
+              h={{ lg: '31px', md: '19px', sm: '19px' }}
+              w={{ lg: '121px', md: '75px', sm: '75px' }}
               fontStyle={'normal'}
               fontFamily={'text'}
-              h={'25px'}
               fontWeight={'black'}
-              ml={'-10px'}
+              ml={{ lg: '-30px', md: '-40px', sm: '-40px' }}
+              pt={{ sm: '2px' }}
             >
               NinjaMail
             </Heading>
@@ -436,84 +437,58 @@ const Home: NextPage = () => {
 
           <Flex
             mt={{ lg: '79px', md: '51px', sm: '3.73px' }}
-            ml={{ lg: '194.61px', md: '128.97', sm: '17px' }}
+            ml={{ lg: '168px', md: '81.97px', sm: '17px' }}
             fontWeight={'bold'}
             fontFamily={'text'}
             fontSize={{ lg: '19px', md: '"12px"', sm: '12px' }}
             lineHeight={'14px'}
+            flexDirection={'row'}
           >
-            <Flex flexDirection={{ lg: 'row', md: 'row', sm: 'row' }}>
-              <Wrap
-                spacingX={{ sm: 0 }}
-                direction={{ lg: 'row', md: 'row', sm: 'column' }}
-              >
-                <WrapItem flexDirection={'column'}>
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>
-                    Features
-                  </Text>
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>Pricing</Text>
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>
-                    Services
-                  </Text>
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>
-                    Partners
-                  </Text>
-                </WrapItem>
+            <Flex
+              mr={{ lg: '56px', md: '13px', sm: '0px' }}
+              h={{ lg: '199.86px', md: '130.28px' }}
+              sx={{
+                '@media (max-width: 767px)': {
+                  flexDirection: 'column',
+                },
+              }}
+            >
+              <List mr={{ lg: '58px', md: '39px', sm: '0px' }} spacing={1}>
+                <ListItem mb={'0.5rem'}>Features</ListItem>
+                <ListItem mb={'0.5rem'}>Pricing</ListItem>
+                <ListItem mb={'0.5rem'}>Services</ListItem>
+                <ListItem mb={'0.5rem'}>Partners</ListItem>
+              </List>
 
-                <WrapItem
-                  ml={{ lg: '75px', md: '39px' }}
-                  flexDirection={'column'}
-                >
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>
-                    About Us
-                  </Text>
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>
-                    Tutorials
-                  </Text>
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>
-                    Resources
-                  </Text>
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>
-                    Help Center
-                  </Text>
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>
-                    Templates
-                  </Text>
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>
-                    Case Studies
-                  </Text>
-                </WrapItem>
-              </Wrap>
+              <List spacing={1} w={'120px'}>
+                <ListItem mb={'0.5rem'}>About Us</ListItem>
+                <ListItem mb={'0.5rem'}>Tutorials</ListItem>
+                <ListItem mb={'0.5rem'}>Resources</ListItem>
+                <ListItem mb={'0.5rem'}>Help Center</ListItem>
+                <ListItem mb={'0.5rem'}>Templates</ListItem>
+                <ListItem mb={'0.5rem'}>Case Studies</ListItem>
+              </List>
+            </Flex>
 
-              <Wrap
-                ml={{ lg: '92px', md: '39px', sm: '72px' }}
-                spacingX={{ sm: 0 }}
-                direction={{ lg: 'row', md: 'row', sm: 'column' }}
-              >
-                <WrapItem flexDirection={'column'}>
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>Medium</Text>
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>Twitter</Text>
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>
-                    Facebook
-                  </Text>
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>
-                    Instagram
-                  </Text>
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>
-                    LinkedIn
-                  </Text>
-                </WrapItem>
-                <WrapItem
-                  ml={{ lg: '75px', md: '39px' }}
-                  flexDirection={'column'}
-                >
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>
-                    Contact Us
-                  </Text>
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>Slack</Text>
-                  <Text mb={{ lg: '10px', md: '7px', sm: '7px' }}>Jobs</Text>
-                </WrapItem>
-              </Wrap>
+            <Flex
+              sx={{
+                '@media (max-width: 767px)': {
+                  flexDirection: 'column',
+                },
+              }}
+            >
+              <List mr={{ lg: '58px', md: '39px', sm: '0px' }} spacing={1}>
+                <ListItem mb={'0.5rem'}>Medium</ListItem>
+                <ListItem mb={'0.5rem'}>Twitter</ListItem>
+                <ListItem mb={'0.5rem'}>Facebook</ListItem>
+                <ListItem mb={'0.5rem'}>Instagram</ListItem>
+                <ListItem mb={'0.5rem'}>LinkedIn</ListItem>
+              </List>
+              <List spacing={1} w={{ lg: '166px', md: '166px' }}>
+                <ListItem mb={'0.5rem'}>Contact Us</ListItem>
+                <ListItem mb={'0.5rem'}>Slack</ListItem>
+                <ListItem mb={'0.5rem'}>Jobs</ListItem>
+              </List>
             </Flex>
           </Flex>
         </Flex>
@@ -541,7 +516,7 @@ const Home: NextPage = () => {
             lineHeight={'18px'}
             fontFamily={'text'}
             fontWeight={700}
-            maxW={{ lg: '561px', md: '338px', sm: '186px' }}
+            maxW={{ lg: '565px', md: '338px', sm: '186px' }}
           >
             NinjaMail is a sample project for Quest AI. © 2019 Quest AI, All
             rights reserved.
