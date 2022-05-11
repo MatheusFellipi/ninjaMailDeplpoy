@@ -21,7 +21,7 @@ export const Footer = () => {
           h={{ lg: '60.23px', md: '37.27px' }}
           align={'center'}
           mt={{ lg: '82px', md: '47px', sm: '47px' }}
-          ml={{ lg: '228px', md: '63px', sm: '17px' }}
+          ml={{ lg: '431px', md: '63px', sm: '17px' }}
         >
           <Box width={92} height={45} mt={'12px'}>
             <Image src="/icon/ninjamail.svg" alt="ninjamail" />
