@@ -8,10 +8,6 @@ export const Video = () => {
     justifyContent: 'center',
     textAlign: 'center',
     color: 'white',
-    textShadow: '0 0 20px black',
-    fontWeight: 'bold',
-    fontSize: '20px',
-    px: 4,
     background: 'url(/img/VIDEO.png) center/cover no-repeat',
   }
 
